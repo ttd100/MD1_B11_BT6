@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const a ='qwertyuiopasdfghjklzxcvbnm'
+    let string=prompt('nhap 1 chuoi de kiem tra:')
+    let b=[];
+    for (let i = 0; i < string.length; i++) {
+        if (a.indexOf(string[i].toLowerCase()) !== -1 && !(string[i].toLowerCase()==''&&b[b.length-1]==''))
+            b.push(string[i]);
+    }
+    let tachMang=b.join('').split('');
+    document.write('chuoi da nhap co'+ tachMang.length+'tu')
+</script>
+</body>
+</html>
